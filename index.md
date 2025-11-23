@@ -1,3 +1,9 @@
+---
+title: "Startseite"
+nav_exclude: true
+layout: default
+---
+
 # 🛡️ King-Arthurs Server  
 ### *Luanti & More in a Medieval Realm*
 
@@ -18,19 +24,11 @@ Unsere wachsende Sammlung an Spiele-Servern:
 
 ---
 
-## 🗺️ Serverkarte
-
-Unsere Luanti-Serverkarte findest du hier:
-
-👉 **https://mt.king-arthur.eu**
-
----
-
 ## 🛠️ Mods
 
 Unsere Mods werden gesammelt auf GitHub gehostet:
 
-👉 **https://github.com/King-Arthurs-Team**
+👉 **[Github](https://github.com/King-Arthurs-Team)**
 
 Weitere Infos zu den Mods findest du auf den jeweiligen Spielseiten.
 

@@ -11,14 +11,16 @@
 
 <body class="parchment-bg">
     <header class="site-header">
-        <h1 class="site-title">King-Arthurs Server</h1>
+        <h1 class="site-title">
+            <a href="{{ '/' | relative_url }}">King-Arthurs Server</a>
+        </h1>
         <h2 class="site-sub">Ein Reich der Spiele</h2>
         <nav class="nav-bar">
-            {% for item in site.pages %}
-            {% if item.title %}
-            <a href="{{ item.url }}">{{ item.title }}</a>
+        {% for item in site.pages %}
+            {% if item.title and item.nav_exclude != true %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
-            {% endfor %}
+        {% endfor %}
         </nav>
     </header>
 

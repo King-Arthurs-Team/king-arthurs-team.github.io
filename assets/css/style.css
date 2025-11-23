@@ -33,6 +33,15 @@ body {
   color: #bfa27a;
 }
 
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  text-shadow: 0 0 5px #d4b98a;
+}
+
 /* --- Navigation --- */
 .nav-bar {
   margin-top: 1.5rem;
@@ -78,3 +87,4 @@ p, li {
   color: #a98c65;
   font-size: 0.9rem;
 }
+
