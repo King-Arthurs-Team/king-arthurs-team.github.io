@@ -41,6 +41,3 @@ Hast du Ideen, Lust mitzubauen oder willst Teil unserer Welt werden?
 
 **Werde Teil von King-Arthurs Reich!**
 
----
-
-Made with ❤️ and Medieval Spirit
