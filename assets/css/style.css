@@ -17,7 +17,7 @@ body {
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: 2px solid #5a3d23;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .site-title {
@@ -67,17 +67,48 @@ body {
   background: rgba(26, 20, 16, 0.75);
   border: 1px solid #5a3d23;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "UnifrakturCook", serif;
   color: #d9c29c;
 }
 
-p, li {
+p,
+li {
   font-size: 1.15rem;
   line-height: 1.6;
+}
+
+.content-area a {
+  color: #d4b98a;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #5a3d23;
+  padding-bottom: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+/* --- External Links --- */
+.content-area a[href^="http"]::after {
+  content: " ↗";
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.content-area a:hover {
+  color: #f0dcb3;
+  border-bottom-color: #d4b98a;
+  text-shadow: 0 0 6px rgba(212, 185, 138, 0.8);
+}
+
+.content-area a:visited {
+  color: #bfa27a;
+  border-bottom-color: #7a5a3c;
 }
 
 /* --- Footer --- */
@@ -87,4 +118,3 @@ p, li {
   color: #a98c65;
   font-size: 0.9rem;
 }
-
