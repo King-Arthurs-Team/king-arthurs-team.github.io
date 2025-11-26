@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: King Arthurs Team
 description: Welcome to King-Arthurs server
+
+markdown: GFM 
+plugins:
+- jekyll-gfm-admonitions
