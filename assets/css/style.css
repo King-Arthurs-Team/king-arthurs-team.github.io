@@ -235,6 +235,7 @@ table tr:hover {
   border: 1px solid #5a3d23;
   background: rgba(26, 20, 16, 0.6);
   color: #d9c29c;
+  display: block;
   transition: 0.2s ease-in-out;
   padding: 0.8rem;
   border-radius: 8px;

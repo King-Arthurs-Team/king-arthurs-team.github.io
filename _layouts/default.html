@@ -34,10 +34,9 @@
             <div class="game-cards sidebar-cards">
                 {% assign gamepages = site.pages | where_exp:"p","p.path contains 'games/'" | sort: "order" %}
                 {% for p in gamepages %}
-                <a class="game-card" href="{{ p.url }}">
+                <a class="game-card" href="{{ p.url }}" title="{{ p.description | default: 'Click to learn more about this game.' }}">
                     {% if p.icon %}<img class="game-icon" src="{{ p.icon }}" alt="{{ p.title }} icon">{% endif %}
                     <h4>{{ p.title }}</h4>
-                    <p>{{ p.description | default: "Click to learn more about this game." }}</p>
                 </a>
                 {% endfor %}
             </div>
