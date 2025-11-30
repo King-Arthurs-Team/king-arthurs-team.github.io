@@ -61,8 +61,10 @@ body {
 
 /* --- Content --- */
 .content-area {
+  box-sizing: border-box;
   max-width: 900px;
-  margin: auto;
+  width: 100%;
+  /*margin: auto;*/
   padding: 2rem;
   background: rgba(26, 20, 16, 0.75);
   border: 1px solid #5a3d23;
@@ -108,22 +110,29 @@ li {
 
 .content-area a:visited {
   color: #bfa27a;
-  border-bottom-color: #7a5a3c;
+  border-bottom-color: hsl(29, 34%, 36%);
 }
 
-blockquote {
-    background: url('/assets/img/blockquote-parchment.png');
-    background-size: cover;
-    background-position: center;
-    padding: 1.5rem 2rem;
-    border: 2px solid #4a3a23;
-    border-radius: 8px;
-    margin: 1.5rem 0;
-    color: #2b1f12;
-    font-family: "EB Garamond", "Times New Roman", serif;
-    font-size: 1.05rem;
-    box-shadow: 0 0 8px rgba(0,0,0,0.4);
-    position: relative;
+.content-area blockquote {
+  line-height: 1;
+  padding: 2%;
+  position: relative;
+  color: #2b1f12;
+  font-family: "EB Garamond", "Times New Roman", serif;
+}
+.content-area blockquote * {
+  z-index: 2;
+  position: relative;
+}
+
+.content-area blockquote:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 30px #8a4d0f inset;
+  background: #fffef0;
+  filter: url(/assets/img/filter.svg#wavy) drop-shadow(3px 5px 5px rgba(00, 0, 0, 0.8));
+  z-index: 1;
 }
 
 hr {
@@ -178,16 +187,19 @@ table tr:hover {
 
 /* --- Layout Wrapper --- */
 .page-wrapper {
+  box-sizing: border-box;
   display: flex;
   gap: 1.5rem;
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
+
 }
 
 
 /* --- Sidebar --- */
 .sidebar {
+  box-sizing: border-box;
   width: 260px;
   flex-shrink: 0;
   background: rgba(26, 20, 16, 0.75);
@@ -195,7 +207,6 @@ table tr:hover {
   border-radius: 10px;
   padding: 1rem;
   height: fit-content;
-  box-sizing: border-box;
 }
 
 
