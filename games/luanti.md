@@ -26,6 +26,9 @@ icon: "/assets/img/gameicons/luanti.svg"
 Explore the live map here:  
 👉 **[https://mt.king-arthur.eu](https://mt.king-arthur.eu)**
 
+    <iframe src="https://mt.king-arthur.eu/" width="100%" height="400px">
+    </iframe>
+
 ---
 
 ## 🔧 Mods  
